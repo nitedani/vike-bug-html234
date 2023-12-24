@@ -2,9 +2,11 @@
 export { onRenderClient }
 
 import ReactDOM from 'react-dom/client'
+import * as _ from "lodash"
 
 let root
 async function onRenderClient(pageContext) {
+  console.log();
   const { Page, pageProps } = pageContext
 
   const page = (
